@@ -674,7 +674,7 @@ class MegatronArguments(RLHFMegatronArgumentsMixin, MegatronTunerMixin):
     eval_steps: Optional[int] = None
 
     # fp8
-    fp8_format: Literal['e4m3', 'hybrid'] = None
+    fp8_format: Literal['e4m3', 'hybrid', 'hif8'] = None
     fp8_recipe: Literal['tensorwise', 'delayed', 'mxfp8', 'blockwise'] = 'delayed'
     fp8_param_gather: bool = False
     fp8_amax_history_len: int = 1024
